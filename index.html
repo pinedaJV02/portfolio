@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JV Pineda Portfolio</title>
+<meta name="description" content="JV Pineda, Mechatronics Engineer in London. Test rigs, electrical integration and robotics projects.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JV Pineda Portfolio">
+<meta property="og:title" content="JV Pineda Portfolio">
+<meta property="og:description" content="JV Pineda, Mechatronics Engineer in London. Test rigs, electrical integration and robotics projects.">
+<meta property="og:image" content="https://pinedajv02.github.io/portfolio/img/hero.jpg">
+<meta property="og:url" content="https://pinedajv02.github.io/portfolio/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<header class="hero">
+  <figure class="hero-media graded"><img src="img/hero.jpg" alt="JV Pineda standing beside the H2 water separation test rig in the lab"></figure>
+  <nav class="nav" aria-label="Main">
+    <a class="mark" href="#top" id="top">JV Pineda</a>
+    <ul>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#university">University</a></li>
+      <li><a href="#self-led">Self-led</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <span class="year">Portfolio 2026</span>
+  </nav>
+  <div class="hero-copy">
+    <p class="eyebrow">Mechatronics Engineer · London</p>
+    <h1>JV Pineda</h1>
+    <p class="lede">I design, build and validate electromechanical systems that help teams make decisions with real data and get products into the field, from hydrogen test rigs at Parker Hannifin to the Climate Wall at Anzen.</p>
+    <div class="actions">
+      <a class="btn btn-solid" href="#work">View work</a>
+      <a class="btn btn-ghost" href="#contact">Get in touch</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="figures" aria-label="Impact">
+    <div class="figure"><p class="eyebrow">Parker Hannifin</p><p class="win">In-house H2 filter testing</p><p>Delivered an HSE-approved rig that tests heavy-duty hydrogen filters on site at 10,000 L/min.</p></div>
+    <div class="figure"><p class="eyebrow">Anzen</p><p class="win">Cheaper, more efficient units</p><p>Test data cut two TECs from every Climate Wall while raising COP by 0.7.</p></div>
+    <div class="figure"><p class="eyebrow">Anzen</p><p class="win">Electrics ready for pilot homes</p><p>Owned the electrical subsystem end to end across three design iterations.</p></div>
+    <div class="figure"><p class="eyebrow">Parker Hannifin</p><p class="win">Prototypes overnight</p><p>In-house printing turned designs around overnight and kept production lines running with same-day repairs.</p></div>
+  </div>
+</div>
+
+<section id="work">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Industry work</p>
+        <h2>Selected work</h2>
+      </div>
+      <p class="intro">Design Engineer at Anzen since June 2025, after a 14-month design internship at Parker Hannifin.</p>
+    </div>
+
+    <div class="work">
+      <a class="card feature" href="h2-rig.html">
+        <figure class="graded"><img src="img/h2-panel-v2.jpg" alt="Open control cabinet for the H2 test rig: Siemens S7-1200 PLC, safety relay, power supply and labelled terminal wiring" style="object-position:30% 40%"></figure>
+        <div class="meta">
+          <p class="eyebrow">Parker Hannifin · 6 months · £15k</p>
+          <h3>H2 Water Separation Test Rig</h3>
+          <p>Gave Parker Hannifin a way to test heavy-duty hydrogen vehicle filters in-house at full flow. I led the £15k rig from concept to HSE approval in six months, and it went into service on site.</p>
+          <span class="more">View project &rarr;</span>
+        </div>
+      </a>
+      <a class="card quarter" href="tec-rig.html">
+        <figure class="graded"><img src="img/tec-rig.jpg" alt="TEC test rig: pumps, flow sensors and water loops mounted on a plywood test board"></figure>
+        <div class="meta">
+          <p class="eyebrow">Anzen · ESP32 · C++ · MQTT</p>
+          <h3>TEC Efficiency Test Rig</h3>
+          <p>Made the Climate Wall cheaper to build and more efficient to run. My rig data showed the unit needed two fewer TECs, corrected earlier performance assumptions and guided the design and controls teams.</p>
+          <span class="more">View project &rarr;</span>
+        </div>
+      </a>
+      <a class="card quarter" href="climate-wall.html">
+        <figure class="graded"><img src="img/cw-v20.jpg" alt="JV Pineda beside a finished Climate Wall v2.0 unit" style="object-position:45% 55%"></figure>
+        <div class="meta">
+          <p class="eyebrow">Anzen · 3 design iterations</p>
+          <h3>Climate Wall 2.0</h3>
+          <p>Took the electrics from prototype to pilot homes, where units now report their own performance. The product is heading to manufacture.</p>
+          <span class="more">View project &rarr;</span>
+        </div>
+      </a>
+      <a class="card quarter" href="climate-wall.html#looms">
+        <figure class="graded"><img src="img/loom.jpg" alt="Hand-built wiring loom held up for inspection" style="object-position:50% 35%"></figure>
+        <div class="meta">
+          <p class="eyebrow">Anzen · v1.3 to v2.0</p>
+          <h3>Wiring Looms</h3>
+          <p>Moved the units from hand-built wiring to supplier-made harnesses, making them easier to build and maintain in test homes.</p>
+          <span class="more">View the iterations &rarr;</span>
+        </div>
+      </a>
+      <a class="card quarter" href="printing.html">
+        <figure class="graded"><img src="img/print.jpg" alt="SLA print on the build plate with support lattice"></figure>
+        <div class="meta">
+          <p class="eyebrow">Parker Hannifin · 14 months</p>
+          <h3>SLA &amp; FDM Printing</h3>
+          <p>Cut prototype turnaround to overnight and kept production lines running with same-day redesigns and repairs.</p>
+          <span class="more">View project &rarr;</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="paper" id="about">
+  <div class="wrap sheet">
+    <div>
+      <p class="eyebrow">About</p>
+      <h2 style="margin-top:14px">I build it, then prove it works</h2>
+      <p class="summary">Mechatronics engineer with hands-on experience designing, building and validating electromechanical systems, from £15k PLC-controlled hydrogen test rigs to integrated climate control prototypes. I work across mechanical and electrical design, motion and actuation, PLC and HMI development, and prototyping and validation, running parallel workstreams in rapid development cycles.</p>
+      <table class="spec" style="margin-top:32px">
+        <tr><th scope="row">Now</th><td>Design Engineer, Anzen, London · June 2025 to present</td></tr>
+        <tr><th scope="row">Before</th><td>Design Intern, Parker Hannifin, Dewsbury · June 2023 to August 2024</td></tr>
+        <tr><th scope="row">Education</th><td>MEng Mechatronics and Robotics Engineering (with a year in industry), University of Leeds, 2:1 · 2020 to 2025</td></tr>
+        <tr><th scope="row">Based</th><td>London, UK</td></tr>
+      </table>
+    </div>
+    <div class="skills" aria-label="Technical skills">
+      <div><h4>Mechanical and electrical design</h4><p>SolidWorks (PDM), SolidWorks Electrical, Inventor, engineering drawings, GD&amp;T and tolerancing, electrical schematics, wiring diagrams, control panel design</p></div>
+      <div><h4>Motion and actuation</h4><p>Motor and actuator sizing, series elastic actuators, kinematics (DH, analytical inverse kinematics), solenoid actuation, drive selection, motion system trade studies</p></div>
+      <div><h4>Controls and embedded</h4><p>Siemens TIA Portal (S7 PLC), MATLAB/Simulink, HMI development, C#/WinForms, Arduino, ESP32, MQTT, C++, Python, ROS2, Git</p></div>
+      <div><h4>Prototyping and validation</h4><p>Test rig design, prototype build and validation, risk assessment, SOP development, HSE compliance, sheet metal fabrication, FDM/SLA 3D printing, laser cutting</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="uni" id="university">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">University of Leeds · 2020 to 2025</p>
+        <h2>University projects</h2>
+      </div>
+      <p class="intro">MEng Mechatronics and Robotics Engineering with a year in industry, graduated with a 2:1.</p>
+    </div>
+    <div class="work">
+      <a class="card" href="exoskeleton.html">
+        <figure class="graded cad"><img src="img/exo.jpg" alt="Exoskeleton CAD showing thigh, cable and ankle links"></figure>
+        <div class="meta">
+          <p class="eyebrow">Individual · 2022 to 2023 · Simulink</p>
+          <h3>Self-Balancing Exoskeleton</h3>
+          <p>Designed to help elderly users avoid falls. In simulation it caught the user after 20 Ns pushes, and sensing in its joints picked up the user's intent to move.</p>
+          <span class="more">View project &rarr;</span>
+        </div>
+      </a>
+      <a class="card" href="robotic-guitar.html">
+        <figure class="graded"><img src="img/guitar-real.jpg" alt="The built robotic guitar player: belt-driven fretting carriages on linear rails over the guitar neck" style="object-position:50% 60%"></figure>
+        <div class="meta">
+          <p class="eyebrow">Team of 5 · 2024 to 2025 · Solenoid actuation</p>
+          <h3>Robotic Guitar Player</h3>
+          <p>Gave the team's robot guitarist human-level speed. My fretting system played at 120 BPM and sounded like a human player, within its £200 budget.</p>
+          <span class="more">View project &rarr;</span>
+        </div>
+      </a>
+      <a class="card" href="turtlebot.html">
+        <figure class="graded cad"><img src="img/turtle.jpg" alt="TurtleBot poster recognition and LiDAR map figures"></figure>
+        <div class="meta">
+          <p class="eyebrow">Team of 4 · 2023 · ROS2 · Python</p>
+          <h3>TurtleBot Image Identification</h3>
+          <p>My image recognition code identified every target across five different maps, in simulation and in a real maze, even when parts of the image were blocked.</p>
+          <span class="more">View project &rarr;</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="self-led" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Self-led and self-funded</p>
+        <h2>Beyond the day job</h2>
+      </div>
+      <p class="intro">A product I conceived, funded and led to launch on my own time.</p>
+    </div>
+    <div class="work">
+      <a class="card feature" href="salsivo.html">
+        <figure class="media-frame" style="aspect-ratio:16/9">
+          <video src="video/salsivo-demo.mp4#t=3" muted playsinline preload="metadata" aria-label="Still from the Salsivo app demo: a salsa move clip beside the app's screens"></video>
+        </figure>
+        <div class="meta">
+          <p class="eyebrow">Self-led · Self-funded · iOS and Android</p>
+          <h3>Salsivo</h3>
+          <p>Spotted why salsa dancers plateau, then built the fix: an app that shows dancers the moves they already know, in context. Over two years I funded it, led an outsourced development team, filmed 1,000 clips and launched it on the App Store and Google Play.</p>
+          <span class="more">View project &rarr;</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-inner">
+    <div style="display:grid;gap:16px">
+      <p class="eyebrow">Contact</p>
+      <h2>Get in touch</h2>
+    </div>
+    <div class="contact-lines">
+      <div class="contact-row">
+        <span class="label">Email</span>
+        <span class="email" id="email">jvpineda054@gmail.com</span>
+        <button class="copy" id="copy-email" type="button">Copy</button>
+      </div>
+      <div class="contact-row">
+        <span class="label">LinkedIn</span>
+        <a href="https://www.linkedin.com/in/jvpineda0/" target="_blank" rel="noopener">linkedin.com/in/jvpineda0</a>
+      </div>
+      <div class="contact-row">
+        <span class="label">Based</span>
+        <span>London, UK</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+document.getElementById('copy-email').addEventListener('click', function () {
+  var btn = this, text = document.getElementById('email').textContent;
+  function selectIt() {
+    var r = document.createRange(); r.selectNodeContents(document.getElementById('email'));
+    var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+    btn.textContent = 'Selected';
+  }
+  try {
+    navigator.clipboard.writeText(text).then(function () { btn.textContent = 'Copied'; }, selectIt);
+  } catch (e) { selectIt(); }
+  setTimeout(function () { btn.textContent = 'Copy'; }, 2000);
+});
+</script>
+</body>
+</html>

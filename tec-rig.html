@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TEC Efficiency Test Rig · JV Pineda</title>
+<meta name="description" content="How a two-week test rig cut the Climate Wall from eight TECs to six while raising COP by 0.7.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JV Pineda Portfolio">
+<meta property="og:title" content="TEC Efficiency Test Rig · JV Pineda">
+<meta property="og:description" content="How a two-week test rig cut the Climate Wall from eight TECs to six while raising COP by 0.7.">
+<meta property="og:image" content="https://pinedajv02.github.io/portfolio/img/tec-rig.jpg">
+<meta property="og:url" content="https://pinedajv02.github.io/portfolio/tec-rig.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<nav class="nav bar" aria-label="Main">
+  <a class="mark" href="index.html">JV Pineda</a>
+  <ul>
+    <li><a class="back" href="index.html#work">&larr; All work</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="wrap project-head">
+  <p class="eyebrow">Anzen · Test rigs · 2 weeks</p>
+  <h1>TEC Efficiency Test Rig</h1>
+  <p class="lede">Made the Climate Wall cheaper to build and more efficient to run. In two weeks I built a rig that measured how the unit's thermoelectric coolers (TECs) really perform, and the data showed each unit could run on six instead of eight while raising its efficiency.</p>
+  <ul class="tags" aria-label="Tools">
+    <li>ESP32</li><li>C++</li><li>MQTT</li><li>Live data monitoring</li>
+  </ul>
+</header>
+
+<div class="wrap">
+  <figure class="graded project-hero"><img src="img/tec-rig.jpg" alt="TEC test rig: pumps, flow sensors and water loops mounted on a plywood test board" style="object-position:50% 55%"></figure>
+
+  <div class="figures results" aria-label="Results">
+    <div class="figure"><p class="eyebrow">Cost</p><p class="win">Two fewer TECs per unit</p><p>Cut the TEC count from 8 to 6, reducing the cost of every Climate Wall.</p></div>
+    <div class="figure"><p class="eyebrow">Performance</p><p class="win">More efficient with fewer parts</p><p>Raised the unit's coefficient of performance (COP) by 0.7.</p></div>
+    <div class="figure"><p class="eyebrow">Evidence</p><p class="win">Assumptions replaced by data</p><p>Corrected earlier performance estimates with measured results.</p></div>
+    <div class="figure"><p class="eyebrow">Team</p><p class="win">Decisions made on data</p><p>Results chose the TEC model and fed the mechanical design and controls teams.</p></div>
+  </div>
+</div>
+
+<section class="paper story">
+  <div class="wrap">
+    <div class="pr">
+      <div>
+        <h4>Challenge</h4>
+        <p>The TECs drive the Climate Wall's heating and cooling, and they are a large part of its electrical bill of materials. The team needed to know which TEC model, and how many, would meet the unit's target power draw.</p>
+        <p>The performance figures we had were assumptions, not measurements.</p>
+      </div>
+      <div>
+        <h4>What I did</h4>
+        <p>Designed and built a test rig in two weeks that set water flow remotely and logged TEC surface temperatures, flow rate, voltage and current, so overall efficiency could be calculated for each setup.</p>
+        <p>An ESP32 streamed live data over WiFi and MQTT, so tests could be set up and watched remotely instead of from the bench.</p>
+      </div>
+      <div>
+        <h4>Impact</h4>
+        <p>The data picked the TEC model best suited to the Climate Wall's target power draw. It showed the unit could drop from eight TECs to six while improving COP by 0.7, which cut cost per unit.</p>
+        <p>I fed the results back to the mechanical design and controls teams.</p>
+      </div>
+    </div>
+
+    <div class="story-grid">
+      <div>
+        <h3>Rig specification</h3>
+        <table class="spec">
+          <tr><th scope="row">Result</th><td class="big">8 → 6 TECs, COP +0.7</td></tr>
+          <tr><th scope="row">Build time</th><td>2 weeks, design to data</td></tr>
+          <tr><th scope="row">Controller</th><td>ESP32, programmed in C++</td></tr>
+          <tr><th scope="row">Comms</th><td>WiFi and MQTT with live data monitoring</td></tr>
+          <tr><th scope="row">Control</th><td>Remote water-flow set points</td></tr>
+          <tr><th scope="row">Measures</th><td>TEC surface temperatures, water flow rate, voltage, current</td></tr>
+          <tr><th scope="row">Output</th><td>Overall efficiency (COP) for each TEC setup</td></tr>
+        </table>
+      </div>
+      <div class="gallery">
+        <figure style="grid-column:1/-1">
+          <div class="graded"><img src="img/tec-board.jpg" alt="Back of the test board: ESP32 and sensor boards on a breadboard, wired to the pumps and TEC loops, with a bench power supply"></div>
+          <figcaption>Control side: an ESP32 and sensor boards log temperatures, flow and power. Built fast from plywood, off-the-shelf pumps and printed brackets, because the answer mattered more than the rig.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap" style="margin-top:clamp(24px,4vw,48px)">
+  <a class="next" href="climate-wall.html">
+    <div style="display:grid;gap:12px">
+      <p class="eyebrow">Next project</p>
+      <h2>Climate Wall 2.0</h2>
+    </div>
+    <span class="back" style="color:var(--brass)">View project &rarr;</span>
+  </a>
+</div>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-inner">
+    <div style="display:grid;gap:16px">
+      <p class="eyebrow">Contact</p>
+      <h2>Get in touch</h2>
+    </div>
+    <div class="contact-lines">
+      <div class="contact-row"><span class="label">Email</span><a href="mailto:jvpineda054@gmail.com">jvpineda054@gmail.com</a></div>
+      <div class="contact-row"><span class="label">LinkedIn</span><a href="https://www.linkedin.com/in/jvpineda0/" target="_blank" rel="noopener">linkedin.com/in/jvpineda0</a></div>
+      <div class="contact-row"><span class="label">Based</span><span>London, UK</span></div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

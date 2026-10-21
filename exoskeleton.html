@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Self-Balancing Exoskeleton · JV Pineda</title>
+<meta name="description" content="A self-balancing lower-body exoskeleton designed to prevent falls: capture point control, series elastic actuators and intent detection.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JV Pineda Portfolio">
+<meta property="og:title" content="Self-Balancing Exoskeleton · JV Pineda">
+<meta property="og:description" content="A self-balancing lower-body exoskeleton designed to prevent falls: capture point control, series elastic actuators and intent detection.">
+<meta property="og:image" content="https://pinedajv02.github.io/portfolio/img/exo-sim.jpg">
+<meta property="og:url" content="https://pinedajv02.github.io/portfolio/exoskeleton.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<nav class="nav bar" aria-label="Main">
+  <a class="mark" href="index.html">JV Pineda</a>
+  <ul>
+    <li><a href="#walking">Walking</a></li>
+    <li><a class="back" href="index.html#university">&larr; All work</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="wrap project-head">
+  <p class="eyebrow">University of Leeds · Individual project · Oct 2022 to May 2023</p>
+  <h1>Self-Balancing Exoskeleton</h1>
+  <p class="lede">Designed a lower-body exoskeleton to help elderly users avoid falls. In simulation it walked and caught its balance after pushes of 20 Ns, and a sensing upgrade I designed let it detect when the user intends to move.</p>
+  <ul class="tags" aria-label="Skills">
+    <li>SolidWorks</li><li>MATLAB Simulink</li><li>Capture point control</li><li>Series elastic actuators</li><li>Fuzzy logic</li>
+  </ul>
+</header>
+
+<div class="wrap">
+  <figure class="media-frame zoom project-hero">
+    <span class="badge">Simulation · Simulink</span>
+    <video src="video/exo-walk-a.mp4" poster="img/exo-sim.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Simulink simulation of the exoskeleton walking along a walkway"></video>
+  </figure>
+
+  <div class="figures results" aria-label="Results">
+    <div class="figure"><p class="eyebrow">Balance</p><p class="win">Recovers from pushes</p><p>Caught itself after 20 Ns impulses, and after single 30 Ns impulses.</p></div>
+    <div class="figure"><p class="eyebrow">Sensing</p><p class="win">Reads intent to move</p><p>Hall effect sensing in the joints fed three fuzzy controllers tuned on human gait data.</p></div>
+    <div class="figure"><p class="eyebrow">Sizing</p><p class="win">Actuators sized from first principles</p><p>Static torque analysis and a direct versus harmonic drive trade study.</p></div>
+    <div class="figure"><p class="eyebrow">Build</p><p class="win">6 DOF in 10 kg</p><p>A lightweight aluminium frame sized from average human dimensions.</p></div>
+  </div>
+</div>
+
+<section class="paper story">
+  <div class="wrap">
+    <div class="pr">
+      <div>
+        <h4>Challenge</h4>
+        <p>Falls are a major risk for elderly people. The brief was a lower-body exoskeleton that supports everyday movement and actively helps the wearer rebalance when they are pushed or trip.</p>
+        <p>That meant sizing actuators for real joint torques while keeping the motors compliant with the wearer.</p>
+      </div>
+      <div>
+        <h4>What I did</h4>
+        <p>Worked alone from concept to simulation. I designed the 6 DOF structure in SolidWorks from average human dimensions, and sized the joint actuators from a static torque analysis and a direct drive versus harmonic drive trade study.</p>
+        <p>I designed a series elastic actuator (SEA) module for passive compliance, added Hall effect sensing, and simulated capture point stepping control in Simulink using an inverted pendulum model and analytical inverse kinematics.</p>
+      </div>
+      <div>
+        <h4>Impact</h4>
+        <p>In simulation the exoskeleton walked and recovered its balance from 20 Ns impulses and single 30 Ns impulses.</p>
+        <p>The SEA upgrade let it detect the user's intent to move, feeding three fuzzy inference controllers tuned on human gait data.</p>
+      </div>
+    </div>
+
+    <div class="story-grid">
+      <div>
+        <h3>Specification</h3>
+        <table class="spec">
+          <tr><th scope="row">Result</th><td class="big">Recovers from 20 Ns pushes</td></tr>
+          <tr><th scope="row">Structure</th><td>6 DOF, 10 kg aluminium</td></tr>
+          <tr><th scope="row">Dimensions</th><td>Thigh 0.42 m, calf 0.37 m, ankle 0.14 m, width 0.38 m</td></tr>
+          <tr><th scope="row">Actuators</th><td>RMD-X10 at hip and knee, RMD-X6 at ankle</td></tr>
+          <tr><th scope="row">Compliance</th><td>Series elastic actuator module with Hall effect sensing</td></tr>
+          <tr><th scope="row">Control</th><td>Capture point stepping, inverted pendulum model, analytical inverse kinematics</td></tr>
+          <tr><th scope="row">Intent detection</th><td>Three fuzzy inference controllers tuned on human gait data</td></tr>
+          <tr><th scope="row">Tools</th><td>SolidWorks, MATLAB Simulink</td></tr>
+        </table>
+      </div>
+      <div class="gallery">
+        <figure style="grid-column:1/-1">
+          <div class="graded cad" style="aspect-ratio:16/9"><img src="img/exo-layout.jpg" alt="Labelled CAD of the exoskeleton showing hip, thigh link, SE module, calf and ankle links, actuators and dimensions"></div>
+          <figcaption>Layout and key dimensions, with the SE modules and RMD actuators labelled.</figcaption>
+        </figure>
+        <figure style="grid-column:1/-1">
+          <div class="graded cad" style="aspect-ratio:2/1"><img src="img/exo-sea.jpg" alt="Exploded CAD of the series elastic actuator module attached to a motor"></div>
+          <figcaption>Exploded view of the series elastic actuator module.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="walking">
+  <div class="wrap video-row">
+    <div class="copy-col">
+      <p class="eyebrow">Capture point control</p>
+      <h2>Walking in simulation</h2>
+      <p>The controller treats the body as an inverted pendulum and works out where the next foot must land to stop a fall. Analytical inverse kinematics then turns that step into joint angles for the actuators.</p>
+    </div>
+    <figure class="media-frame zoom" style="aspect-ratio:16/10">
+      <span class="badge">Simulation · Simulink</span>
+      <video src="video/exo-walk-b.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Second Simulink simulation of the exoskeleton walking"></video>
+    </figure>
+  </div>
+</section>
+
+<div class="wrap">
+  <a class="next" href="turtlebot.html">
+    <div style="display:grid;gap:12px">
+      <p class="eyebrow">Next project</p>
+      <h2>TurtleBot Image Identification</h2>
+    </div>
+    <span class="back" style="color:var(--brass)">View project &rarr;</span>
+  </a>
+</div>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-inner">
+    <div style="display:grid;gap:16px">
+      <p class="eyebrow">Contact</p>
+      <h2>Get in touch</h2>
+    </div>
+    <div class="contact-lines">
+      <div class="contact-row"><span class="label">Email</span><a href="mailto:jvpineda054@gmail.com">jvpineda054@gmail.com</a></div>
+      <div class="contact-row"><span class="label">LinkedIn</span><a href="https://www.linkedin.com/in/jvpineda0/" target="_blank" rel="noopener">linkedin.com/in/jvpineda0</a></div>
+      <div class="contact-row"><span class="label">Based</span><span>London, UK</span></div>
+    </div>
+  </div>
+</section>
+
+<script src="motion.js"></script>
+</body>
+</html>

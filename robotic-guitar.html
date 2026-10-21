@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Robotic Guitar Player · JV Pineda</title>
+<meta name="description" content="Designing the fretting system for a robot guitarist: 120 BPM, a 95% tonal match to a human player, under a £200 budget.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JV Pineda Portfolio">
+<meta property="og:title" content="Robotic Guitar Player · JV Pineda">
+<meta property="og:description" content="Designing the fretting system for a robot guitarist: 120 BPM, a 95% tonal match to a human player, under a £200 budget.">
+<meta property="og:image" content="https://pinedajv02.github.io/portfolio/img/guitar-real.jpg">
+<meta property="og:url" content="https://pinedajv02.github.io/portfolio/robotic-guitar.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<nav class="nav bar" aria-label="Main">
+  <a class="mark" href="index.html">JV Pineda</a>
+  <ul>
+    <li><a href="#design">Design</a></li>
+    <li><a class="back" href="index.html#university">&larr; All work</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="wrap project-head split">
+  <div class="copy-col">
+    <p class="eyebrow">University of Leeds · Team of 5 · Oct 2024 to May 2025</p>
+    <h1>Robotic Guitar Player</h1>
+    <p class="lede">Gave the team's robot guitarist human-level speed. I designed and built the fretting system that presses the strings, and it played at 120 BPM with a 95% tonal match to a human player, all within a £200 budget.</p>
+    <ul class="tags" aria-label="Skills">
+      <li>SolidWorks</li><li>Solenoid actuation</li><li>Linear rails</li><li>3D printing</li><li>Mechanism design</li>
+    </ul>
+  </div>
+  <figure class="media-frame" style="aspect-ratio:3/4">
+    <span class="badge">Video · fretting</span>
+    <video src="video/guitar-fretting.mp4" autoplay muted loop playsinline preload="metadata" aria-label="The robot's fretting fingers pressing strings along the guitar neck"></video>
+  </figure>
+</header>
+
+<div class="wrap">
+  <div class="figures" aria-label="Results">
+    <div class="figure"><p class="eyebrow">Speed</p><p class="win">Human-level playing speed</p><p>The fretting system kept up at 120 BPM.</p></div>
+    <div class="figure"><p class="eyebrow">Sound</p><p class="win">95% tonal match</p><p>Spectrum analysis matched a human player, both peaking at C#3.</p></div>
+    <div class="figure"><p class="eyebrow">Budget</p><p class="win">Delivered under £200</p><p>The whole subsystem came in within its budget.</p></div>
+    <div class="figure"><p class="eyebrow">Iteration</p><p class="win">Refined to version 5</p><p>The final mechanism is the fifth iteration of my design.</p></div>
+  </div>
+</div>
+
+<section class="paper story">
+  <div class="wrap">
+    <div class="pr">
+      <div>
+        <h4>Challenge</h4>
+        <p>Design, build and control a robot that plays an unaltered six-string electric guitar, as part of a robotic band for showcases.</p>
+        <p>The fretting fingers had to be under 5.3 mm wide to fit between frets, adjust to how far each string deflects, and stay robust and easy to service.</p>
+      </div>
+      <div>
+        <h4>What I did</h4>
+        <p>Owned the pitch-shifting (fretting) system. I engineered fingers driven by 25 N solenoids, carried on motor-driven belt and pulley carriages with adjustable geometry.</p>
+        <p>The carriages run on an aluminium extrusion linear rail system with custom 3D printed parts, which I iterated through five versions and integrated with the team's software and electronics.</p>
+      </div>
+      <div>
+        <h4>Impact</h4>
+        <p>The system met its specification: repeatable force on every string, human-level speed at 120 BPM and a 95% tonal match.</p>
+        <p>It came in under its £200 budget.</p>
+      </div>
+    </div>
+
+    <div class="story-grid">
+      <div>
+        <h3>Specification</h3>
+        <table class="spec">
+          <tr><th scope="row">Result</th><td class="big">120 BPM, 95% tonal match</td></tr>
+          <tr><th scope="row">My subsystem</th><td>Pitch shifting (fretting)</td></tr>
+          <tr><th scope="row">Actuation</th><td>25 N solenoids on motor-driven belt carriages</td></tr>
+          <tr><th scope="row">Structure</th><td>Aluminium extrusion linear rails, HGR20 and LML7B sliding blocks, custom 3D printed parts</td></tr>
+          <tr><th scope="row">Constraint</th><td>Finger profile under 5.3 mm, adjustable for string deflection</td></tr>
+          <tr><th scope="row">Budget</th><td>Under £200</td></tr>
+          <tr><th scope="row">Team</th><td>5 students, Oct 2024 to May 2025</td></tr>
+        </table>
+      </div>
+      <div class="pair">
+        <figure>
+          <div class="graded" style="aspect-ratio:3/4"><img src="img/guitar-real.jpg" alt="The built robot: fretting carriages on linear rails either side of the guitar neck" style="object-position:50% 55%"></div>
+          <figcaption>The finished rig, looking down the neck.</figcaption>
+        </figure>
+        <figure>
+          <div class="graded" style="aspect-ratio:3/4"><img src="img/guitar-real-2.jpg" alt="Close-up of the fretting arms and springs above the guitar strings"></div>
+          <figcaption>Fretting arms and carriages up close.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="design">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Engineering the fingers</p>
+        <h2>Design and proof</h2>
+      </div>
+      <p class="intro">Five iterations led to the final fretting unit. Recordings then confirmed it sounded like a human player.</p>
+    </div>
+
+    <div class="gallery">
+      <figure class="span-7">
+        <div class="graded cad"><img src="img/guitar-versions.jpg" alt="CAD of fretting mechanism versions 2, 3 and 4 side by side, with belt clamps labelled"></div>
+        <figcaption>Versions 2, 3 and 4 of the fretting mechanism.</figcaption>
+      </figure>
+      <figure class="span-5">
+        <div class="graded cad"><img src="img/guitar-mechanism.jpg" alt="Labelled CAD of the final fretting unit: solenoid, fretting arm and finger, sliding blocks and belt clamp"></div>
+        <figcaption>The final unit: solenoid, fretting arm and finger on HGR20 and LML7B sliding blocks.</figcaption>
+      </figure>
+    </div>
+
+    <div class="split-row">
+      <div class="pair">
+        <figure>
+          <div class="graded cad" style="aspect-ratio:1/1"><img src="img/guitar-spectrum-a.jpg" alt="Frequency spectrum of a note fretted by a human player"></div>
+          <figcaption>Human fretting</figcaption>
+        </figure>
+        <figure>
+          <div class="graded cad" style="aspect-ratio:1/1"><img src="img/guitar-spectrum-b.jpg" alt="Frequency spectrum of the same note fretted by the robot, almost identical to the human"></div>
+          <figcaption>Robot fretting</figcaption>
+        </figure>
+      </div>
+      <p class="callout">A human and the robot fretting the same note produce practically identical spectra, both peaking at C#3. That is the evidence behind the 95% tonal match.</p>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <a class="next" href="exoskeleton.html">
+    <div style="display:grid;gap:12px">
+      <p class="eyebrow">Next project</p>
+      <h2>Self-Balancing Exoskeleton</h2>
+    </div>
+    <span class="back" style="color:var(--brass)">View project &rarr;</span>
+  </a>
+</div>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-inner">
+    <div style="display:grid;gap:16px">
+      <p class="eyebrow">Contact</p>
+      <h2>Get in touch</h2>
+    </div>
+    <div class="contact-lines">
+      <div class="contact-row"><span class="label">Email</span><a href="mailto:jvpineda054@gmail.com">jvpineda054@gmail.com</a></div>
+      <div class="contact-row"><span class="label">LinkedIn</span><a href="https://www.linkedin.com/in/jvpineda0/" target="_blank" rel="noopener">linkedin.com/in/jvpineda0</a></div>
+      <div class="contact-row"><span class="label">Based</span><span>London, UK</span></div>
+    </div>
+  </div>
+</section>
+
+<script src="motion.js"></script>
+</body>
+</html>

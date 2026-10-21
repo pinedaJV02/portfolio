@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TurtleBot Image Identification · JV Pineda</title>
+<meta name="description" content="An autonomous TurtleBot in ROS2 that mapped mazes with lidar and identified targets with SIFT and FLANN, in simulation and the real world.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JV Pineda Portfolio">
+<meta property="og:title" content="TurtleBot Image Identification · JV Pineda">
+<meta property="og:description" content="An autonomous TurtleBot in ROS2 that mapped mazes with lidar and identified targets with SIFT and FLANN, in simulation and the real world.">
+<meta property="og:image" content="https://pinedajv02.github.io/portfolio/img/turtle-map.jpg">
+<meta property="og:url" content="https://pinedajv02.github.io/portfolio/turtlebot.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<nav class="nav bar" aria-label="Main">
+  <a class="mark" href="index.html">JV Pineda</a>
+  <ul>
+    <li><a href="#vision">Vision</a></li>
+    <li><a class="back" href="index.html#university">&larr; All work</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="wrap project-head">
+  <p class="eyebrow">University of Leeds · Team of 4 · Jan to May 2023</p>
+  <h1>TurtleBot Image Identification</h1>
+  <p class="lede">I developed the image recognition that let our autonomous robot identify rooms and target images. It recognised the target every time, across five different maps, in simulation and in a real maze, even when parts of the image were blocked.</p>
+  <ul class="tags" aria-label="Skills">
+    <li>ROS2</li><li>Python</li><li>OpenCV</li><li>SIFT and FLANN</li><li>Lidar mapping</li><li>Gazebo</li>
+  </ul>
+</header>
+
+<div class="wrap">
+  <figure class="graded cad project-hero" style="aspect-ratio:1152/423;max-height:none"><img src="img/turtle-map.jpg" alt="RViz map of the third maze built from lidar, next to the Gazebo layout of the same maze with the poster location marked" style="padding:3%"></figure>
+
+  <div class="figures results" aria-label="Results">
+    <div class="figure"><p class="eyebrow">Reliability</p><p class="win">Every target identified</p><p>Successful recognition in all tests across five varied maps.</p></div>
+    <div class="figure"><p class="eyebrow">Robustness</p><p class="win">Worked despite occlusion</p><p>Recognised characters even with parts of the poster blocked.</p></div>
+    <div class="figure"><p class="eyebrow">Sim to real</p><p class="win">Gazebo and a real maze</p><p>The same software ran in simulation and on the physical robot.</p></div>
+    <div class="figure"><p class="eyebrow">Autonomy</p><p class="win">Mapped as it searched</p><p>Lidar built the map and kept the robot clear of obstacles.</p></div>
+  </div>
+</div>
+
+<section class="paper story">
+  <div class="wrap">
+    <div class="pr">
+      <div>
+        <h4>Challenge</h4>
+        <p>Simulate and control a TurtleBot that explores an unknown room or maze, finds a poster and identifies the character on it.</p>
+        <p>It had to work in Gazebo and on a real robot, across different layouts, with changes in environment and partly hidden images.</p>
+      </div>
+      <div>
+        <h4>What I did</h4>
+        <p>I developed the image recognition code in Python and OpenCV that let the robot identify rooms and the target images, using SIFT feature extraction and FLANN matching against reference images.</p>
+        <p>My vision code ran within the team's ROS2 system, alongside lidar mapping and obstacle avoidance, on a team of four.</p>
+      </div>
+      <div>
+        <h4>Impact</h4>
+        <p>My recognition code identified the target in every test across five varied maps, in simulation and in a real maze.</p>
+        <p>It coped with occlusion and changes in environment, and carried over from simulation to the real robot.</p>
+      </div>
+    </div>
+
+    <div class="story-grid">
+      <div>
+        <h3>Specification</h3>
+        <table class="spec">
+          <tr><th scope="row">Result</th><td class="big">Targets found in all tests, 5 maps</td></tr>
+          <tr><th scope="row">My part</th><td>Image recognition: identifying rooms and target images</td></tr>
+          <tr><th scope="row">Platform</th><td>TurtleBot, ROS2</td></tr>
+          <tr><th scope="row">Language</th><td>Python</td></tr>
+          <tr><th scope="row">Sensing</th><td>Lidar and camera</td></tr>
+          <tr><th scope="row">Navigation</th><td>Lidar mapping and obstacle avoidance</td></tr>
+          <tr><th scope="row">Vision</th><td>OpenCV, SIFT feature extraction, FLANN matching</td></tr>
+          <tr><th scope="row">Testing</th><td>Gazebo simulation and a physical maze</td></tr>
+          <tr><th scope="row">Team</th><td>4 students, Jan to May 2023</td></tr>
+        </table>
+      </div>
+      <div class="gallery" id="vision">
+        <figure style="grid-column:1/-1">
+          <div class="graded cad" style="aspect-ratio:1186/439"><img src="img/turtle-recognition.jpg" alt="Camera view finding the poster, and FLANN feature matches linking the poster to the reference character" style="padding:3%"></div>
+          <figcaption>Finding the poster, then matching its features to the reference character with FLANN.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <a class="next" href="salsivo.html">
+    <div style="display:grid;gap:12px">
+      <p class="eyebrow">Next project</p>
+      <h2>Salsivo</h2>
+    </div>
+    <span class="back" style="color:var(--brass)">View project &rarr;</span>
+  </a>
+</div>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-inner">
+    <div style="display:grid;gap:16px">
+      <p class="eyebrow">Contact</p>
+      <h2>Get in touch</h2>
+    </div>
+    <div class="contact-lines">
+      <div class="contact-row"><span class="label">Email</span><a href="mailto:jvpineda054@gmail.com">jvpineda054@gmail.com</a></div>
+      <div class="contact-row"><span class="label">LinkedIn</span><a href="https://www.linkedin.com/in/jvpineda0/" target="_blank" rel="noopener">linkedin.com/in/jvpineda0</a></div>
+      <div class="contact-row"><span class="label">Based</span><span>London, UK</span></div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
